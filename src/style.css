@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap');
+
+body{
+    background-color: white;
+    font-family: 'Readex Pro', sans-serif;    
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 0;
+}
+
+.col1{
+    height: fit-content;
+    border: 1px solid red;
+    padding:0;
+}
+
+.col2{
+   border: 0px solid blue;
+   display: grid;
+   grid-template-rows: 1fr 12fr;
+   height: 100vh;
+   
+}
+
+.header{
+  border:0px solid black;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr 1fr;  
+  
+
+}
+    .header>div{
+        border-left: 1px solid gray;
+        padding-top: 20px;
+    }
+
+    .nameShop{
+        font-size: 25pt;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        font-weight: 800;
+    }
+
+    .menu, .contact, .rsvp{
+        font-size: 15pt;
+        padding-left: 10px;
+    }
+
+    .menu:hover{
+        background-color: rgb(250, 249, 246);
+    }
+
+    .contact:hover{
+        background-color: rgb(250, 249, 246); 
+    }
+
+    .rsvp:hover{
+        background-color: rgb(250, 249, 246); 
+
+    }
+
+.content{
+    border:0px solid red;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+    .side-content{
+        border: 0px solid red;
+        display: grid;
+        grid-template-rows: 3fr 1fr;
+        text-align: center;
+        padding-left: 75px;
+        padding-right:75px;
+        margin-top: 15%;
+        
+    }
+
+    .text1{
+        font-size: 15pt;
+    }
+
+    .text2{
+        font-size:15pt;
+    }
+
+    .btn1{
+        margin-top: 20px;
+        background-color: white;
+        height: 110%;
+        
+    }
+
+    .btn1:hover{
+        background-color: rgb(250, 249, 246); 
+        color: cadetblue;
+    }
