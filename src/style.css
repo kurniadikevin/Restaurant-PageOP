@@ -10,7 +10,7 @@ body{
 
 .col1{
     height: fit-content;
-    border: 1px solid red;
+    border: 0px solid red;
     padding:0;
 }
 
@@ -40,6 +40,9 @@ body{
         padding-left: 20px;
         font-weight: 800;
     }
+    .nameShop:hover{
+        font-weight: 500;
+    }
 
     .menu, .contact, .rsvp{
         font-size: 15pt;
@@ -66,7 +69,7 @@ body{
     
 }
 
-    .side-content{
+.side-content{
         border: 0px solid red;
         display: grid;
         grid-template-rows: 3fr 1fr;
@@ -95,4 +98,64 @@ body{
     .btn1:hover{
         background-color: rgb(250, 249, 246); 
         color: cadetblue;
+    }
+
+
+.menu-content{
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    gap: 12px;
+}
+    .menu-header{
+        border: 0px solid grey;
+        font-size: 20pt;
+    }
+
+    .coffee-menu{
+        border: 0px solid gray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+        .coffee-title{
+            font-size: larger;
+            font-weight: 700;
+        }
+        .coffee-cont{
+
+        }
+
+    .brunch-menu{
+        border: 0px solid grey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+        .brunch-title{
+            font-size: larger;
+            font-weight: 700;
+        }
+
+        .brunch-cont{
+
+        }
+
+.contact-cont{
+    border: 0px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+    font-size: 15pt;
+    gap: 10px;
+}
+
+    .contact-head{
+        font-weight: 700;
     }

@@ -1,5 +1,8 @@
 import _ from 'lodash';
 import './style.css';
+import {menuFun,test} from './menu';
+import {contactFun} from './contact';
+import {rsvpFun} from './rsvp';
 
 console.log('Hello !');
 const body = document.querySelector('body');
@@ -51,6 +54,8 @@ header.classList.add('header');
 const content = document.getElementById('content'); 
 content.classList.add('content');     
 col2.appendChild(content);
+
+const home = function(){
     const sideContent = document.createElement('div');
     sideContent.classList.add('side-content');
         const text1= document.createElement('div');
@@ -69,4 +74,48 @@ col2.appendChild(content);
         sideContent.appendChild(text2);
         text2.appendChild(btn1);
     content.appendChild(sideContent);
-        
+
+        //event listener on btn1
+        btn1.addEventListener('click',function(){
+            //content.style.display="none";
+            content.innerHTML='';
+            contactFun();
+            content.appendChild(contactFun());
+            
+        })        
+    return sideContent;
+};
+home();
+
+//evennt listener
+nameShop.addEventListener('click',function(){
+    content.innerHTML='';
+    //home();
+    content.appendChild(home());
+})
+
+menu.addEventListener('click',function(){
+    //content.style.display="none";
+    content.innerHTML='';
+    menuFun();
+    content.appendChild(menuFun());
+    test();
+})
+
+contact.addEventListener('click',function(){
+    //content.style.display="none";
+    content.innerHTML='';
+    contactFun();
+    content.appendChild(contactFun());
+    
+})
+
+rsvp.addEventListener('click',function(){
+    //content.style.display="none";
+    content.innerHTML='';
+    rsvpFun();
+    content.appendChild(rsvpFun());
+    
+})
+
+
